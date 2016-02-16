@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= title %></title>
+    <title></title>
     <link rel='stylesheet' href='/css/style.css' />
     <script src="/bower_components/angular/angular.min.js"></script>
     <script src="/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
@@ -9,7 +9,9 @@
   </head>
   <body ng-app='someApp'>
     <h1>Angular</h1>
-
+      <div ng-controller='navCtrl'>
+        <div ng-click='logout()'>Logout</div>
+      </div>
     <ui-view></ui-view>
   </body>
 </html>

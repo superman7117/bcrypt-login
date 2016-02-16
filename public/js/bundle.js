@@ -39,3 +39,11 @@ app.service('Auth', function(){
 app.controller('navCtrl', function($scope, Auth){
   $scope.isLoggedIn = Auth.isLoggedIn()
 })
+
+'use strict';
+
+var app = angular.module('someApp');
+
+app.controller('homeCtrl', function() {
+  console.log('homeCtrl');
+});
